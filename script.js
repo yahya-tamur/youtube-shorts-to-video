@@ -9,9 +9,9 @@ window.onload = () => {
   cr();
   let oldHref = document.location.href;
   const observer = new MutationObserver(mutations => {
-    if (oldHref !== document.location.href) {
-      oldHref = document.location.href;
+    if (oldHref !== document.location.href) { 
       cr();
+      oldHref = document.location.href;
     }
   });
   observer.observe(document.querySelector("body"), { childList: true, subtree: true });
