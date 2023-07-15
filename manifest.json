@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Shorts to Video",
+  "description": "automatically redirects youtube shorts to videos",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ]
+}
